@@ -5,9 +5,9 @@ const Header = () => {
     return (
         <div className="header">
             <h1>Explore Countries</h1>
-            <nav>
+            {/* <nav>
                 <a href="/home">Home</a>
-            </nav>
+            </nav> */}
         </div>
     );
 };

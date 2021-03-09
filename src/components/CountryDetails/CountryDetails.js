@@ -13,7 +13,7 @@ const CountryDetails = () => {
         fetch(url)
             .then(res => res.json())
             .then(data => setCountry(data[0]))
-    }, [])
+    }, [name])
     return (
         <div className="country-detail">
             <img src={country.flag} alt="" />

@@ -8,13 +8,13 @@ import {
 import NoMatch from './components/NoMatch/NoMatch';
 import Home from './components/Home/Home';
 import CountryDetails from './components/CountryDetails/CountryDetails';
-
+import Header from './components/Header/Header';
 
 function App() {
-  
+    
   return (
     <div className="App">
-       
+       <Header></Header>
     <Router >
      <Switch>
        

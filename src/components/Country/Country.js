@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Country.css'
 const Country = (props) => {
-    const {flag, name, capital, } = props.country;
+    const {flag, name, capital} = props.country;
    
     return (
         <div className = "countries-container">
