@@ -9,11 +9,15 @@ import NoMatch from './components/NoMatch/NoMatch';
 import Home from './components/Home/Home';
 import CountryDetails from './components/CountryDetails/CountryDetails';
 
+
 function App() {
   
   return (
+    <div className="App">
+       
     <Router >
      <Switch>
+       
         <Route path ="/home">
              <Home></Home>
         </Route>
@@ -29,6 +33,7 @@ function App() {
         </Route>
       </Switch>
     </Router>
+    </div>
   );
 }
 

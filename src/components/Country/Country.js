@@ -1,20 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import './Country.css'
 const Country = (props) => {
-    const {name, capital} = props.country;
-    const countryStyle ={
-        border : '1px solid purple',
-        margin : '20px',
-        padding : '20px',
-        borderRadius : '20px',
-    }
+    const {flag, name, capital, } = props.country;
+   
     return (
-        <div style ={countryStyle}>
+        <div className = "countries-container">
+            <img src={flag} alt="flag" />
              <h2> Name : {name}</h2>
               <p> Capital :{capital}</p>
               <Link to = {`country/${name}`}>
-              <button> Show Detail of : {name} </button>
+              <button> Show Details </button>
               </Link>
         </div>
     );
